@@ -1,0 +1,44 @@
+body {
+  font-family: 'Inter', 'Noto Sans SC', 'Noto Sans Thai', sans-serif;
+  background-color: #fafafa;
+  margin: 0;
+  padding: 0;
+}
+
+.hero-section {
+  background: linear-gradient(to right, #32b768, #009688);
+  color: white;
+  text-align: center;
+  padding: 80px 20px;
+  border-radius: 0 0 40px 40px;
+}
+
+.hero-text h1 {
+  font-size: 2rem;
+}
+
+.product-card {
+  border: none;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+}
+
+.carousel-item img {
+  border-radius: 20px;
+  object-fit: cover;
+  height: 250px;
+}
+
+@media (max-width: 768px) {
+  .hero-section {
+    padding: 50px 15px;
+  }
+  .carousel-item img {
+    height: 180px;
+  }
+}

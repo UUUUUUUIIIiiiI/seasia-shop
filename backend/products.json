@@ -1,0 +1,248 @@
+[
+  {
+    "id": 1,
+    "name": "华为Mate60手机",
+    "title": "性能旗舰，再突破极限",
+    "description": "华为Mate60搭载自研芯片，影像能力全面升级，支持5G和超高清摄影。",
+    "price": 4999,
+    "stock": 50,
+    "active": true,
+    "image": "https://via.placeholder.com/120?text=Mate60"
+  },
+  {
+    "id": 2,
+    "name": "小米电动滑板车",
+    "title": "轻便出行新选择",
+    "description": "小米智能电动滑板车，续航长达30公里，轻松折叠便携。",
+    "price": 2399,
+    "stock": 30,
+    "active": true,
+    "image": "https://via.placeholder.com/120?text=滑板车"
+  },
+  {
+    "id": 3,
+    "name": "大疆Mini 3无人机",
+    "title": "航拍神器",
+    "description": "大疆Mini 3无人机，轻巧便携，支持4K视频拍摄。",
+    "price": 3499,
+    "stock": 20,
+    "active": true,
+    "image": "https://via.placeholder.com/120?text=无人机"
+  },
+  {
+    "id": 4,
+    "name": "李宁跑鞋",
+    "title": "轻盈舒适，助力跑步",
+    "description": "李宁轻量跑鞋，透气缓震，适合长距离跑步。",
+    "price": 399,
+    "stock": 100,
+    "active": true,
+    "image": "https://via.placeholder.com/120?text=跑鞋"
+  },
+  {
+    "id": 5,
+    "name": "完美日记口红套装",
+    "title": "多色选择，魅力绽放",
+    "description": "完美日记经典口红套装，多种颜色搭配，持久滋润。",
+    "price": 199,
+    "stock": 200,
+    "active": true,
+    "image": "https://via.placeholder.com/120?text=口红"
+  },
+  {
+    "id": 6,
+    "name": "荣事达空气炸锅",
+    "title": "健康美味轻松做",
+    "description": "荣事达空气炸锅，少油烟，快速加热，轻松制作美味佳肴。",
+    "price": 399,
+    "stock": 50,
+    "active": true,
+    "image": "https://via.placeholder.com/120?text=空气炸锅"
+  },
+  {
+    "id": 7,
+    "name": "美的电饭煲",
+    "title": "智能烹饪，好饭香",
+    "description": "美的智能电饭煲，多种烹饪模式，米饭更香甜。",
+    "price": 299,
+    "stock": 80,
+    "active": true,
+    "image": "https://via.placeholder.com/120?text=电饭煲"
+  },
+  {
+    "id": 8,
+    "name": "海尔洗衣机",
+    "title": "高效洁净，省时省力",
+    "description": "海尔全自动洗衣机，大容量，静音节能。",
+    "price": 1299,
+    "stock": 20,
+    "active": true,
+    "image": "https://via.placeholder.com/120?text=洗衣机"
+  },
+  {
+    "id": 9,
+    "name": "索尼耳机",
+    "title": "降噪音质，畅享音乐",
+    "description": "索尼无线降噪耳机，高清音质，续航持久。",
+    "price": 899,
+    "stock": 40,
+    "active": true,
+    "image": "https://via.placeholder.com/120?text=耳机"
+  },
+  {
+    "id": 10,
+    "name": "联想笔记本电脑",
+    "title": "办公娱乐两不误",
+    "description": "联想轻薄笔记本，配置强大，适合办公及娱乐使用。",
+    "price": 4999,
+    "stock": 25,
+    "active": true,
+    "image": "https://via.placeholder.com/120?text=笔记本"
+  },
+  {
+    "id": 11,
+    "name": "苹果充电宝",
+    "title": "便携快充，续航无忧",
+    "description": "苹果认证移动电源，安全快速充电。",
+    "price": 299,
+    "stock": 60,
+    "active": true,
+    "image": "https://via.placeholder.com/120?text=充电宝"
+  },
+  {
+    "id": 12,
+    "name": "小米手环9",
+    "title": "健康监测，智能提醒",
+    "description": "小米手环9，全天候健康数据监测，运动助手。",
+    "price": 299,
+    "stock": 100,
+    "active": true,
+    "image": "https://via.placeholder.com/120?text=手环"
+  },
+  {
+    "id": 13,
+    "name": "倍轻松按摩椅",
+    "title": "专业按摩，舒缓疲劳",
+    "description": "倍轻松智能按摩椅，多种按摩模式，舒适享受。",
+    "price": 2999,
+    "stock": 10,
+    "active": true,
+    "image": "https://via.placeholder.com/120?text=按摩椅"
+  },
+  {
+    "id": 14,
+    "name": "安踏运动套装",
+    "title": "时尚运动，舒适透气",
+    "description": "安踏专业运动服套装，吸汗透气，设计时尚。",
+    "price": 499,
+    "stock": 120,
+    "active": true,
+    "image": "https://via.placeholder.com/120?text=运动套装"
+  },
+  {
+    "id": 15,
+    "name": "格力空调挂机",
+    "title": "静音节能，舒适体验",
+    "description": "格力挂机空调，快速制冷制热，节能环保。",
+    "price": 2999,
+    "stock": 15,
+    "active": true,
+    "image": "https://via.placeholder.com/120?text=空调"
+  },
+  {
+    "id": 16,
+    "name": "网易严选床品套装",
+    "title": "柔软亲肤，健康睡眠",
+    "description": "网易严选高品质床品，环保材质，舒适透气。",
+    "price": 899,
+    "stock": 50,
+    "active": true,
+    "image": "https://via.placeholder.com/120?text=床品"
+  },
+  {
+    "id": 17,
+    "name": "苏泊尔炒锅",
+    "title": "匠心制造，好厨必备",
+    "description": "苏泊尔不粘锅，耐用易清洗，烹饪更轻松。",
+    "price": 199,
+    "stock": 70,
+    "active": true,
+    "image": "https://via.placeholder.com/120?text=炒锅"
+  },
+  {
+    "id": 18,
+    "name": "小熊电热水壶",
+    "title": "快速烧水，安全可靠",
+    "description": "小熊电热水壶，多重安全保护，快速烧水。",
+    "price": 129,
+    "stock": 150,
+    "active": true,
+    "image": "https://via.placeholder.com/120?text=电热水壶"
+  },
+  {
+    "id": 19,
+    "name": "良品铺子零食礼包",
+    "title": "美味零食，分享快乐",
+    "description": "良品铺子精选零食礼包，丰富口味，多样选择。",
+    "price": 299,
+    "stock": 200,
+    "active": true,
+    "image": "https://via.placeholder.com/120?text=零食礼包"
+  },
+  {
+    "id": 20,
+    "name": "达利园蛋糕整箱",
+    "title": "经典美味，营养健康",
+    "description": "达利园蛋糕整箱装，适合家庭聚会及日常零食。",
+    "price": 199,
+    "stock": 180,
+    "active": true,
+    "image": "https://via.placeholder.com/120?text=蛋糕"
+  },
+  {
+    "id": 1762065443590,
+    "name": "1",
+    "price": 2.99,
+    "stock": 432,
+    "image": "\"D:\\seasia-shop\\backend\\uploads\\sample1.jpg\"",
+    "description": "好吃的",
+    "active": true
+  },
+  {
+    "id": 1762066962806,
+    "name": "2",
+    "price": 3,
+    "stock": 4,
+    "image": "http://localhost:5001/uploads/sample1.jpg",
+    "description": "2323",
+    "active": true
+  },
+  {
+    "id": 1762067029005,
+    "name": "42",
+    "price": 3,
+    "stock": 3434,
+    "image": "http://localhost:5001/uploads/sample2.jpg",
+    "description": "2323",
+    "active": true
+  },
+  {
+    "id": 1762067930847,
+    "name": "00",
+    "price": 3333333,
+    "stock": 2,
+    "image": "http://localhost:5001/uploads/sample5.jpg",
+    "description": "2",
+    "active": true
+  },
+  {
+    "id": 1762140880195,
+    "name": "1",
+    "title": "1",
+    "price": 2,
+    "stock": 0,
+    "image": "3",
+    "description": "4",
+    "active": true
+  }
+]

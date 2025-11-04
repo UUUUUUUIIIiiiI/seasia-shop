@@ -1,0 +1,89 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Seasia Admin Panel</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <script src="https://cdn.jsdelivr.net/npm/socket.io@4.7.2/client-dist/socket.io.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/qrcode/build/qrcode.min.js"></script>
+  <style>
+    body{font-family:Inter,Arial;margin:12px;background:#f4f6f8}
+    .box{background:#fff;padding:12px;border-radius:8px;margin-bottom:12px;box-shadow:0 2px 6px rgba(0,0,0,0.06)}
+    .qr{width:220px;height:220px;margin:10px auto}
+    .status{font-weight:600}
+    .orders{max-height:360px;overflow:auto}
+    .order{border-bottom:1px solid #eee;padding:8px 0}
+    .btn{padding:6px 10px;border-radius:6px;background:#2d9cdb;color:#fff;border:none;cursor:pointer}
+  </style>
+</head>
+<body>
+  <h2>Seasia Admin</h2>
+
+  <div class="box">
+    <div>WhatsApp 状态： <span id="whStatus" class="status">未知</span></div>
+    <div id="qrArea">
+      <p>若尚未登录，请扫码下方二维码（页面自动更新二维码）</p>
+      <div id="qrcode" class="qr"></div>
+      <pre id="qrText" style="font-size:11px;overflow:auto;max-height:80px"></pre>
+    </div>
+  </div>
+
+  <div class="box">
+    <h3>最近订单</h3>
+    <div class="orders" id="ordersList"></div>
+    <button class="btn" onclick="loadOrders()">刷新订单</button>
+  </div>
+
+  <script>
+    const socket = io();
+
+    socket.on("connect", ()=>console.log("socket connected"));
+    socket.on("qr", qr => {
+      document.getElementById("qrText").textContent = qr;
+      // render QR code
+      QRCode.toCanvas(document.getElementById("qrcode"), qr, { width: 220 }).catch(err => console.error(err));
+    });
+    socket.on("ready", ready => {
+      document.getElementById("whStatus").textContent = ready ? "已连接 ✅" : "未连接 ❌";
+      if (ready) {
+        document.getElementById("qrArea").style.display = "none";
+      } else {
+        document.getElementById("qrArea").style.display = "block";
+      }
+    });
+
+    socket.on("newOrder", payload => {
+      // prepend
+      const el = document.getElementById("ordersList");
+      const div = document.createElement("div");
+      div.className = "order";
+      const sent = payload.sent ? "已发送" : `未发送 (${payload.reason||"未知"})`;
+      div.innerHTML = `<div><strong>${payload.order.name}</strong> (${payload.order.phone}) - ${payload.order.time} - <em>${sent}</em></div>
+                       <div>${payload.order.items.map(i=>i.title||i.name).join(", ")}</div>
+                       <div><button class="btn" onclick='markProcessed(${payload.order.id})'>标记处理</button></div>`;
+      el.prepend(div);
+    });
+
+    function loadOrders() {
+      fetch("/api/orders").then(r=>r.json()).then(list=>{
+        const el = document.getElementById("ordersList");
+        el.innerHTML = "";
+        list.reverse().forEach(o=>{
+          const div = document.createElement("div");
+          div.className = "order";
+          div.innerHTML = `<div><strong>${o.name}</strong> (${o.phone}) - ${o.time} ${o.processed?'<span style="color:green"> 已处理</span>':''}</div>
+                           <div>${o.items.map(i=>i.title||i.name).join(", ")}</div>
+                           <div><button class="btn" onclick='markProcessed(${o.id})'>标记处理</button></div>`;
+          el.appendChild(div);
+        });
+      });
+    }
+
+    function markProcessed(id){
+      fetch(`/api/orders/${id}/process`, { method: "POST" }).then(r=>r.json()).then(()=> loadOrders());
+    }
+
+    loadOrders();
+  </script>
+</body>
+</html>

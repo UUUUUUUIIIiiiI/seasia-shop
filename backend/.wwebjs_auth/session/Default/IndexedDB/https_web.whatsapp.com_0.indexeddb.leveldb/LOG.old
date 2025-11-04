@@ -1,0 +1,12 @@
+2025/11/03-22:44:02.990 2490 Reusing MANIFEST D:\seasia-shop\backend\.wwebjs_auth\session\Default\IndexedDB\https_web.whatsapp.com_0.indexeddb.leveldb/MANIFEST-000001
+2025/11/03-22:44:02.990 2490 Recovering log #516
+2025/11/03-22:44:03.035 2490 Reusing old log D:\seasia-shop\backend\.wwebjs_auth\session\Default\IndexedDB\https_web.whatsapp.com_0.indexeddb.leveldb/000516.log 
+2025/11/03-22:44:07.395 37b8 Level-0 table #522: started
+2025/11/03-22:44:07.404 37b8 Level-0 table #522: 362617 bytes OK
+2025/11/03-22:44:07.405 37b8 Delete type=0 #516
+2025/11/03-22:44:07.405 37b8 Manual compaction at level-0 from '\x00!\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00"\x00\x00\x00' @ 0 : 0; will stop at (end)
+2025/11/03-22:44:09.918 f88 Compacting 1@1 + 2@2 files
+2025/11/03-22:44:09.973 f88 Generated table #523@1: 36832 keys, 2190354 bytes
+2025/11/03-22:44:10.021 f88 Generated table #524@1: 33330 keys, 1676336 bytes
+2025/11/03-22:44:10.021 f88 Compacted 1@1 + 2@2 files => 3866690 bytes
+2025/11/03-22:44:10.021 f88 compacted to: files[ 0 0 2 0 0 0 0 ]

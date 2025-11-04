@@ -1,0 +1,18 @@
+2025/11/03-22:50:04.355 2d68 Reusing MANIFEST D:\seasia-shop\backend\.wwebjs_auth\session\Default\IndexedDB\https_web.whatsapp.com_0.indexeddb.leveldb/MANIFEST-000001
+2025/11/03-22:50:04.356 2d68 Recovering log #521
+2025/11/03-22:50:04.389 2d68 Reusing old log D:\seasia-shop\backend\.wwebjs_auth\session\Default\IndexedDB\https_web.whatsapp.com_0.indexeddb.leveldb/000521.log 
+2025/11/03-22:50:04.389 2d68 Delete type=2 #518
+2025/11/03-22:50:04.389 2d68 Delete type=2 #519
+2025/11/03-22:50:04.389 2d68 Delete type=2 #522
+2025/11/03-22:50:09.503 15a8 Level-0 table #527: started
+2025/11/03-22:50:09.517 15a8 Level-0 table #527: 250642 bytes OK
+2025/11/03-22:50:09.518 15a8 Delete type=0 #521
+2025/11/03-22:50:09.519 15a8 Manual compaction at level-0 from '\x00"\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00#\x00\x00\x00' @ 0 : 0; will stop at (end)
+2025/11/03-22:50:11.588 1d8c Compacting 1@1 + 2@2 files
+2025/11/03-22:50:11.643 1d8c Generated table #528@1: 37908 keys, 2193970 bytes
+2025/11/03-22:50:11.685 1d8c Generated table #529@1: 33405 keys, 1697482 bytes
+2025/11/03-22:50:11.685 1d8c Compacted 1@1 + 2@2 files => 3891452 bytes
+2025/11/03-22:50:11.686 1d8c compacted to: files[ 0 0 2 0 0 0 0 ]
+2025/11/03-22:50:11.686 1d8c Delete type=2 #523
+2025/11/03-22:50:11.686 1d8c Delete type=2 #524
+2025/11/03-22:50:11.686 1d8c Delete type=2 #527
